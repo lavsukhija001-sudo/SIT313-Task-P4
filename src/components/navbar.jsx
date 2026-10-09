@@ -1,0 +1,15 @@
+
+function Navbar() {
+  return (
+    <nav>
+      <a href="/">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+      <a href="/login">Login</a>
+      <a href="/signup">Sign Up</a>
+    </nav>
+  );
+}
+
+export default Navbar;
