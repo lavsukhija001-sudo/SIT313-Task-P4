@@ -33,35 +33,33 @@ function Login() {
   }
 
   return (
-    <section>
-      <h2>Login</h2>
 
-      <form onSubmit={handleSubmit}>
+    <section className="auth-page"> <div className="login-box"> <a className="signup-link" href="/signup"> Sign up </a>
+
+    <form onSubmit={handleSubmit}>
+        <label>Your email</label>
         <input
-          type="email"
-          placeholder="Email Address"
-          value={email}
-          onChange={(event) => setEmail(event.target.value)}
-          required
+        type="email"
+        value={email}
+        onChange={(event) => setEmail(event.target.value)}
+        required
         />
 
+        <label>Your password</label>
         <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(event) => setPassword(event.target.value)}
-          required
+        type="password"
+        value={password}
+        onChange={(event) => setPassword(event.target.value)}
+        required
         />
 
         <button type="submit">Login</button>
-      </form>
+    </form>
 
-      <p>{message}</p>
-      <p>
-        Don't have an account? <a href="/signup">Register here</a>
-      </p>
-    </section>
-  );
-}
+    <p className="auth-message">{message}</p>
+    </div>
+
+    </section> );
+}  
 
 export default Login;

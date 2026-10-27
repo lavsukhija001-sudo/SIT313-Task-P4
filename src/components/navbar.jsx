@@ -1,15 +1,16 @@
-
 function Navbar() {
-  return (
-    <nav>
-      <a href="/">Home</a>
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#contact">Contact</a>
-      <a href="/login">Login</a>
-      <a href="/signup">Sign Up</a>
-    </nav>
-  );
+return (
+<nav>
+<a href="/">DEV@Deakin</a>
+<input type="text" placeholder="Search..." />
+
+  <div className="nav-right">
+    <button type="button">Post</button>
+    <a href="/login">Login</a>
+  </div>
+</nav>
+
+);
 }
 
 export default Navbar;

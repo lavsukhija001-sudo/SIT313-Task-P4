@@ -11,41 +11,45 @@ import Contact from './components/contact.jsx';
 import Signup from './components/signup.jsx';
 import Articles from './components/articles.jsx';
 import Footer from './components/footer.jsx';
+
 function HomePage() {
   return (
-    <>
-      
-      <Banner />
-      <About />
-      <Projects />
-      <Gallery />
-      <Contact />
-      <Signup />
-      <Articles />
-    
-    </>
+  <>
+  <Banner />
+  <About />
+  <Projects />
+  <Gallery />
+  <Contact />
+  <Signup />
+  <Articles />
+  </>
   );
-}
+  }
+
+function AuthPage() {
+return (
+  <div className="auth-panels">
+  <Login />
+  <Register />
+  </div>
+  );
+  }
 
 function Page() {
-  return (
-    <BrowserRouter>
-      <Navbar />
+return (
+<BrowserRouter>
+<Navbar />
 
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Register />} />
-      </Routes>
+  <Routes>
+    <Route path="/" element={<HomePage />} />
+    <Route path="/login" element={<AuthPage />} />
+    <Route path="/signup" element={<AuthPage />} />
+  </Routes>
 
-      <Footer />
-    </BrowserRouter>
-  );
+  <Footer />
+</BrowserRouter>
+
+);
 }
 
 export default Page;
-
-
-
-
-

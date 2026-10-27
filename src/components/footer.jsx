@@ -1,28 +1,60 @@
 
+import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+
 function Footer() {
   return (
     <footer className="new-footer">
       <div className="footer-container">
+
         <div className="footer-column">
           <h3>Explore</h3>
-          <a href="#">Home</a>
-          <a href="#about">About</a>
-          <a href="#work">Projects</a>
-          <a href="#contact">Contact</a>
+          <a href="/">Home</a>
+          <a href="/#about">About</a>
+          <a href="/#work">Projects</a>
+          <a href="/#contact">Contact</a>
         </div>
 
         <div className="footer-column">
           <h3>Support</h3>
-          <a href="#contact">FAQs</a>
-          <a href="#contact">Help</a>
-          <a href="#contact">Contact Me</a>
+          <a href="/#contact">FAQs</a>
+          <a href="/#contact">Help</a>
+          <a href="/#contact">Contact Me</a>
         </div>
 
         <div className="footer-column">
           <h3>Stay Connected</h3>
-          <a href="#contact">Facebook</a>
-          <a href="#contact">Twitter</a>
-          <a href="#contact">Instagram</a>
+
+          <div className="social-icons">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              title="Facebook"
+            >
+              <FaFacebookF />
+            </a>
+
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+              title="Twitter"
+            >
+              <FaTwitter />
+            </a>
+
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              title="Instagram"
+            >
+              <FaInstagram />
+            </a>
+          </div>
         </div>
       </div>
 
